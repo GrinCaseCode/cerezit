@@ -98,6 +98,11 @@ $(document).ready(function() {
 
 
 
+/*remove tr basket*/
+$(".btn-delate").click(function() {
+		$(this).parent("td").parent("tr").remove();
+	});
+
 	/*высота блока по экрану*/
 	function heightDetect() {
 		$('.header__bottom').css("height", $(window).height() -$(".header").height() + 60);
