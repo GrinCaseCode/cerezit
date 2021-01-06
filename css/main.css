@@ -2276,3 +2276,6 @@ select {
 .col_radio_basket {
 	padding-left: 60px;
 }
+.footer p a {
+	white-space: nowrap;
+}
