@@ -280,6 +280,8 @@ body {
 }
 }
 
+
+
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px) {
     .container {
@@ -448,6 +450,9 @@ body {
     padding-top: 59px;
 }
 }
+
+
+
 
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px) {
@@ -795,6 +800,10 @@ body {
     white-space: nowrap;
 }
 }
+
+
+
+
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px) {
@@ -1196,7 +1205,7 @@ body {
 	margin: 0;
 }
 .color-product a {
-	border: none;
+	border: none;  
 }
 .basket .title-section {
     padding-bottom: 15px;
