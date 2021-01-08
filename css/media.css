@@ -258,7 +258,7 @@ body {
 	position: relative;
 }
 .wrapper {
-	padding-top: 84px;
+	padding-top: 100px;
 }
 .header__bottom {
 	position: absolute;
@@ -1004,6 +1004,9 @@ body {
 .name-basket {
     font-size: 14px;
     padding-bottom: 3px;
+}
+.card__right {
+    display: none;
 }
 }
 

@@ -289,7 +289,7 @@ p {
 }
 .header-categories li a {
 	display: block;
-	font-size: 14px;
+	font-size: 13px;
 	line-height: 1.2;
 	font-weight: 900;
 	text-transform: uppercase;
@@ -514,6 +514,7 @@ input[type=number]
 }
 .item-product {
 	padding: 25px 25px;
+	padding-top: 0;
 	min-height: 100%;
 	background-color: #fff;
 	max-width: 350px;
@@ -2349,7 +2350,6 @@ select {
 	width: 88px;
 	height: 70px;
 	padding-top: 8px;
-	border-right: none;
 }
 .btn-basket__value {
 	width: 24px;
@@ -2419,8 +2419,9 @@ select {
 	height: 100%;
 }
 .item-product__image {
-	height: 236px;
+	height: 240px;
 	padding: 20px 16px;
+	padding-bottom: 10px;
 }
 .color-product {
 	position: relative;
@@ -2436,4 +2437,7 @@ select {
 }
 .text-basket .link-page {
 	text-transform: none;
+}
+.btn_nav {
+	background-color: transparent;
 }
