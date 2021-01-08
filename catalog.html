@@ -18,8 +18,8 @@
 	<link rel="stylesheet" href="libs/slick-1.5.9/slick/slick.css" />
 	<link rel="stylesheet" href="libs/slick-1.5.9/slick/slick-theme.css" />
 	<link rel="stylesheet" href="css/fonts.css" />
-	<link rel="stylesheet" href="css/main.css?ver=1.3" />
-	<link rel="stylesheet" href="css/media.css?ver=1.3" />
+	<link rel="stylesheet" href="css/main.css?ver=1.8" />
+	<link rel="stylesheet" href="css/media.css?ver=1.8" />
 </head>
 <body>
 
@@ -46,14 +46,27 @@
 						<br>
 						<a href="#callback" class="link-page fancybox">Вызвать замерщика</a>
 					</div>
-					<a href="#" class="btn-basket"><i class="far fa-shopping-cart"></i><span class="btn-basket__value">1</span></a>
-					<span class="btn_nav btn_nav_menu">
-						<span class="sandwich">
-							<span class="sw-topper"></span>
-							<span class="sw-bottom"></span>
-							<span class="sw-footer"></span>
+					<div class="header__right">
+						<div class="header-search">
+							<form>
+								<div class="header-search__line">
+									<div class="item-form">
+										<input type="text" placeholder="Поиск..." required="required">
+									</div>
+									<button class="btn-search"><i class="far fa-search"></i></button>
+								</div>
+							</form>
+							<div class="btn-search-fake"><i class="far fa-search"></i><i class="fal fa-times"></i></div>
+						</div>
+						<a href="#" class="btn-basket"><i class="far fa-shopping-cart"></i><span class="btn-basket__value">1</span></a>
+						<span class="btn_nav btn_nav_menu">
+							<span class="sandwich">
+								<span class="sw-topper"></span>
+								<span class="sw-bottom"></span>
+								<span class="sw-footer"></span>
+							</span>
 						</span>
-					</span>
+					</div>
 				</div>
 			</div>
 			<div class="header__bottom">
@@ -136,24 +149,26 @@
 							<li><a href="#"><i class="fab fa-viber"></i></a></li>
 							<li><a href="#"><i class="fab fa-whatsapp"></i></a></li>
 						</ul>
-						<a href="#callback" class="link-page fancybox"><i class="fas fa-phone-alt"></i>Вызвать замерщика</a>
+						<a href="#callback" class="link-page fancybox"><i class="far fa-phone-alt"></i>Вызвать замерщика</a>
 						<a href="#" class="btn-basket"><i class="far fa-shopping-cart"></i><span class="btn-basket__value">1</span></a>
 						<span class="btn_nav btn_nav_menu">
-							<span class="btn_nav__text">Меню</span>
 							<span class="sandwich">
 								<span class="sw-topper"></span>
 								<span class="sw-bottom"></span>
 								<span class="sw-footer"></span>
 							</span>
 						</span>
-						<span class="btn_nav btn_nav_catalog">
-							<span class="btn_nav__text">Каталог</span>
-							<span class="sandwich">
-								<span class="sw-topper"></span>
-								<span class="sw-bottom"></span>
-								<span class="sw-footer"></span>
-							</span>
-						</span>
+					</div>
+					<div class="header-search">
+						<form>
+							<div class="header-search__line">
+								<div class="item-form">
+									<input type="text" placeholder="Поиск..." required="required">
+								</div>
+								<button class="btn-search"><i class="far fa-search"></i></button>
+							</div>
+						</form>
+						<div class="btn-search-fake"><i class="far fa-search"></i><i class="fal fa-times"></i></div>
 					</div>
 				</div>
 			</div>
@@ -287,7 +302,7 @@
 						<div class="row row_products">
 							<div class="col-xl-4 col-6">
 								<div class="item-product">
-									<div class="item-product_tag">скидка</div>
+									<a href="#" class="item-product__link"></a>
 									<div class="item-product__image">
 										<img src="img/product1.jpg" alt="alt">
 									</div>
@@ -296,31 +311,28 @@
 									<div class="item-product__center">
 										<div class="item-product__feature"><strong>Вес упаковки:</strong> 25 кг</div>
 										<div class="item-product__feature"><strong>Раход:</strong>5 кг / м<sup>2</sup></div>
+										<div class="color-product">
+											<a href="#">Цвет и фактуры на выбор</a>
+											<div class="icon-color"></div>
+										</div>
 									</div>
-									<div class="color-product">
-										<a href="#">Цвет и фактуры на выбор</a>
-										<div class="icon-color"></div>
+									<div class="item-product-prices">
+										<div class="item-product__oldprice">1 400 р. шт</div>
+										<div class="item-product__price">1 000 р. шт</div>
 									</div>
 									<div class="item-product__bottom">
-										<div class="item-product__left">
-											<div class="item-product__price">1 000 р. шт</div>
-											<div class="item-product__oldprice">1 400 р. шт</div>
-										</div>
 										<div class="quantity">
 											<div class="quantity-button quantity-down">–</div>
 											<input type="number" min="1" step="1" value="10">
 											<div class="quantity-button quantity-up">+</div>
 										</div>
-									</div>
-									<div class="item-product__buttons">
-										<a href="#" class="link-simple">подробнее</a>
 										<a href="#" class="btn-main">В корзину</a>
 									</div>
 								</div>
 							</div>
 							<div class="col-xl-4 col-6">
 								<div class="item-product">
-									<div class="item-product_tag">скидка</div>
+									<a href="#" class="item-product__link"></a>
 									<div class="item-product__image">
 										<img src="img/product1.jpg" alt="alt">
 									</div>
@@ -329,27 +341,28 @@
 									<div class="item-product__center">
 										<div class="item-product__feature"><strong>Вес упаковки:</strong> 25 кг</div>
 										<div class="item-product__feature"><strong>Раход:</strong>5 кг / м<sup>2</sup></div>
+										<div class="color-product">
+											<a href="#">Цвет и фактуры на выбор</a>
+											<div class="icon-color"></div>
+										</div>
+									</div>
+									<div class="item-product-prices">
+										<div class="item-product__oldprice">1 400 р. шт</div>
+										<div class="item-product__price">1 000 р. шт</div>
 									</div>
 									<div class="item-product__bottom">
-										<div class="item-product__left">
-											<div class="item-product__price">1 000 р. шт</div>
-											<div class="item-product__oldprice">1 400 р. шт</div>
-										</div>
 										<div class="quantity">
 											<div class="quantity-button quantity-down">–</div>
 											<input type="number" min="1" step="1" value="10">
 											<div class="quantity-button quantity-up">+</div>
 										</div>
-									</div>
-									<div class="item-product__buttons">
-										<a href="#" class="link-simple">подробнее</a>
 										<a href="#" class="btn-main">В корзину</a>
 									</div>
 								</div>
 							</div>
 							<div class="col-xl-4 col-6">
 								<div class="item-product">
-									<div class="item-product_tag">скидка</div>
+									<a href="#" class="item-product__link"></a>
 									<div class="item-product__image">
 										<img src="img/product1.jpg" alt="alt">
 									</div>
@@ -359,26 +372,23 @@
 										<div class="item-product__feature"><strong>Вес упаковки:</strong> 25 кг</div>
 										<div class="item-product__feature"><strong>Раход:</strong>5 кг / м<sup>2</sup></div>
 									</div>
+									<div class="item-product-prices">
+										<div class="item-product__oldprice">1 400 р. шт</div>
+										<div class="item-product__price">1 000 р. шт</div>
+									</div>
 									<div class="item-product__bottom">
-										<div class="item-product__left">
-											<div class="item-product__price">1 000 р. шт</div>
-											<div class="item-product__oldprice">1 400 р. шт</div>
-										</div>
 										<div class="quantity">
 											<div class="quantity-button quantity-down">–</div>
 											<input type="number" min="1" step="1" value="10">
 											<div class="quantity-button quantity-up">+</div>
 										</div>
-									</div>
-									<div class="item-product__buttons">
-										<a href="#" class="link-simple">подробнее</a>
 										<a href="#" class="btn-main">В корзину</a>
 									</div>
 								</div>
 							</div>
 							<div class="col-xl-4 col-6">
 								<div class="item-product">
-									<div class="item-product_tag">скидка</div>
+									<a href="#" class="item-product__link"></a>
 									<div class="item-product__image">
 										<img src="img/product1.jpg" alt="alt">
 									</div>
@@ -387,27 +397,28 @@
 									<div class="item-product__center">
 										<div class="item-product__feature"><strong>Вес упаковки:</strong> 25 кг</div>
 										<div class="item-product__feature"><strong>Раход:</strong>5 кг / м<sup>2</sup></div>
+										<div class="color-product">
+											<a href="#">Цвет и фактуры на выбор</a>
+											<div class="icon-color"></div>
+										</div>
+									</div>
+									<div class="item-product-prices">
+										<div class="item-product__oldprice">1 400 р. шт</div>
+										<div class="item-product__price">1 000 р. шт</div>
 									</div>
 									<div class="item-product__bottom">
-										<div class="item-product__left">
-											<div class="item-product__price">1 000 р. шт</div>
-											<div class="item-product__oldprice">1 400 р. шт</div>
-										</div>
 										<div class="quantity">
 											<div class="quantity-button quantity-down">–</div>
 											<input type="number" min="1" step="1" value="10">
 											<div class="quantity-button quantity-up">+</div>
 										</div>
-									</div>
-									<div class="item-product__buttons">
-										<a href="#" class="link-simple">подробнее</a>
 										<a href="#" class="btn-main">В корзину</a>
 									</div>
 								</div>
 							</div>
 							<div class="col-xl-4 col-6">
 								<div class="item-product">
-									<div class="item-product_tag">скидка</div>
+									<a href="#" class="item-product__link"></a>
 									<div class="item-product__image">
 										<img src="img/product1.jpg" alt="alt">
 									</div>
@@ -416,31 +427,28 @@
 									<div class="item-product__center">
 										<div class="item-product__feature"><strong>Вес упаковки:</strong> 25 кг</div>
 										<div class="item-product__feature"><strong>Раход:</strong>5 кг / м<sup>2</sup></div>
+										<div class="color-product">
+											<a href="#">Цвет и фактуры на выбор</a>
+											<div class="icon-color"></div>
+										</div>
 									</div>
-									<div class="color-product">
-										<a href="#">Цвет и фактуры на выбор</a>
-										<div class="icon-color"></div>
+									<div class="item-product-prices">
+										<div class="item-product__oldprice">1 400 р. шт</div>
+										<div class="item-product__price">1 000 р. шт</div>
 									</div>
 									<div class="item-product__bottom">
-										<div class="item-product__left">
-											<div class="item-product__price">1 000 р. шт</div>
-											<div class="item-product__oldprice">1 400 р. шт</div>
-										</div>
 										<div class="quantity">
 											<div class="quantity-button quantity-down">–</div>
 											<input type="number" min="1" step="1" value="10">
 											<div class="quantity-button quantity-up">+</div>
 										</div>
-									</div>
-									<div class="item-product__buttons">
-										<a href="#" class="link-simple">подробнее</a>
 										<a href="#" class="btn-main">В корзину</a>
 									</div>
 								</div>
 							</div>
 							<div class="col-xl-4 col-6">
 								<div class="item-product">
-									<div class="item-product_tag">скидка</div>
+									<a href="#" class="item-product__link"></a>
 									<div class="item-product__image">
 										<img src="img/product1.jpg" alt="alt">
 									</div>
@@ -450,26 +458,23 @@
 										<div class="item-product__feature"><strong>Вес упаковки:</strong> 25 кг</div>
 										<div class="item-product__feature"><strong>Раход:</strong>5 кг / м<sup>2</sup></div>
 									</div>
+									<div class="item-product-prices">
+										<div class="item-product__oldprice">1 400 р. шт</div>
+										<div class="item-product__price">1 000 р. шт</div>
+									</div>
 									<div class="item-product__bottom">
-										<div class="item-product__left">
-											<div class="item-product__price">1 000 р. шт</div>
-											<div class="item-product__oldprice">1 400 р. шт</div>
-										</div>
 										<div class="quantity">
 											<div class="quantity-button quantity-down">–</div>
 											<input type="number" min="1" step="1" value="10">
 											<div class="quantity-button quantity-up">+</div>
 										</div>
-									</div>
-									<div class="item-product__buttons">
-										<a href="#" class="link-simple">подробнее</a>
 										<a href="#" class="btn-main">В корзину</a>
 									</div>
 								</div>
 							</div>
 							<div class="col-xl-4 col-6">
 								<div class="item-product">
-									<div class="item-product_tag">скидка</div>
+									<a href="#" class="item-product__link"></a>
 									<div class="item-product__image">
 										<img src="img/product1.jpg" alt="alt">
 									</div>
@@ -478,31 +483,28 @@
 									<div class="item-product__center">
 										<div class="item-product__feature"><strong>Вес упаковки:</strong> 25 кг</div>
 										<div class="item-product__feature"><strong>Раход:</strong>5 кг / м<sup>2</sup></div>
+										<div class="color-product">
+											<a href="#">Цвет и фактуры на выбор</a>
+											<div class="icon-color"></div>
+										</div>
 									</div>
-									<div class="color-product">
-										<a href="#">Цвет и фактуры на выбор</a>
-										<div class="icon-color"></div>
+									<div class="item-product-prices">
+										<div class="item-product__oldprice">1 400 р. шт</div>
+										<div class="item-product__price">1 000 р. шт</div>
 									</div>
 									<div class="item-product__bottom">
-										<div class="item-product__left">
-											<div class="item-product__price">1 000 р. шт</div>
-											<div class="item-product__oldprice">1 400 р. шт</div>
-										</div>
 										<div class="quantity">
 											<div class="quantity-button quantity-down">–</div>
 											<input type="number" min="1" step="1" value="10">
 											<div class="quantity-button quantity-up">+</div>
 										</div>
-									</div>
-									<div class="item-product__buttons">
-										<a href="#" class="link-simple">подробнее</a>
 										<a href="#" class="btn-main">В корзину</a>
 									</div>
 								</div>
 							</div>
 							<div class="col-xl-4 col-6">
 								<div class="item-product">
-									<div class="item-product_tag">скидка</div>
+									<a href="#" class="item-product__link"></a>
 									<div class="item-product__image">
 										<img src="img/product1.jpg" alt="alt">
 									</div>
@@ -511,27 +513,28 @@
 									<div class="item-product__center">
 										<div class="item-product__feature"><strong>Вес упаковки:</strong> 25 кг</div>
 										<div class="item-product__feature"><strong>Раход:</strong>5 кг / м<sup>2</sup></div>
+										<div class="color-product">
+											<a href="#">Цвет и фактуры на выбор</a>
+											<div class="icon-color"></div>
+										</div>
+									</div>
+									<div class="item-product-prices">
+										<div class="item-product__oldprice">1 400 р. шт</div>
+										<div class="item-product__price">1 000 р. шт</div>
 									</div>
 									<div class="item-product__bottom">
-										<div class="item-product__left">
-											<div class="item-product__price">1 000 р. шт</div>
-											<div class="item-product__oldprice">1 400 р. шт</div>
-										</div>
 										<div class="quantity">
 											<div class="quantity-button quantity-down">–</div>
 											<input type="number" min="1" step="1" value="10">
 											<div class="quantity-button quantity-up">+</div>
 										</div>
-									</div>
-									<div class="item-product__buttons">
-										<a href="#" class="link-simple">подробнее</a>
 										<a href="#" class="btn-main">В корзину</a>
 									</div>
 								</div>
 							</div>
 							<div class="col-xl-4 col-6">
 								<div class="item-product">
-									<div class="item-product_tag">скидка</div>
+									<a href="#" class="item-product__link"></a>
 									<div class="item-product__image">
 										<img src="img/product1.jpg" alt="alt">
 									</div>
@@ -541,26 +544,23 @@
 										<div class="item-product__feature"><strong>Вес упаковки:</strong> 25 кг</div>
 										<div class="item-product__feature"><strong>Раход:</strong>5 кг / м<sup>2</sup></div>
 									</div>
+									<div class="item-product-prices">
+										<div class="item-product__oldprice">1 400 р. шт</div>
+										<div class="item-product__price">1 000 р. шт</div>
+									</div>
 									<div class="item-product__bottom">
-										<div class="item-product__left">
-											<div class="item-product__price">1 000 р. шт</div>
-											<div class="item-product__oldprice">1 400 р. шт</div>
-										</div>
 										<div class="quantity">
 											<div class="quantity-button quantity-down">–</div>
 											<input type="number" min="1" step="1" value="10">
 											<div class="quantity-button quantity-up">+</div>
 										</div>
-									</div>
-									<div class="item-product__buttons">
-										<a href="#" class="link-simple">подробнее</a>
 										<a href="#" class="btn-main">В корзину</a>
 									</div>
 								</div>
 							</div>
 							<div class="col-xl-4 col-6">
 								<div class="item-product">
-									<div class="item-product_tag">скидка</div>
+									<a href="#" class="item-product__link"></a>
 									<div class="item-product__image">
 										<img src="img/product1.jpg" alt="alt">
 									</div>
@@ -569,27 +569,28 @@
 									<div class="item-product__center">
 										<div class="item-product__feature"><strong>Вес упаковки:</strong> 25 кг</div>
 										<div class="item-product__feature"><strong>Раход:</strong>5 кг / м<sup>2</sup></div>
+										<div class="color-product">
+											<a href="#">Цвет и фактуры на выбор</a>
+											<div class="icon-color"></div>
+										</div>
+									</div>
+									<div class="item-product-prices">
+										<div class="item-product__oldprice">1 400 р. шт</div>
+										<div class="item-product__price">1 000 р. шт</div>
 									</div>
 									<div class="item-product__bottom">
-										<div class="item-product__left">
-											<div class="item-product__price">1 000 р. шт</div>
-											<div class="item-product__oldprice">1 400 р. шт</div>
-										</div>
 										<div class="quantity">
 											<div class="quantity-button quantity-down">–</div>
 											<input type="number" min="1" step="1" value="10">
 											<div class="quantity-button quantity-up">+</div>
 										</div>
-									</div>
-									<div class="item-product__buttons">
-										<a href="#" class="link-simple">подробнее</a>
 										<a href="#" class="btn-main">В корзину</a>
 									</div>
 								</div>
 							</div>
 							<div class="col-xl-4 col-6">
 								<div class="item-product">
-									<div class="item-product_tag">скидка</div>
+									<a href="#" class="item-product__link"></a>
 									<div class="item-product__image">
 										<img src="img/product1.jpg" alt="alt">
 									</div>
@@ -598,31 +599,28 @@
 									<div class="item-product__center">
 										<div class="item-product__feature"><strong>Вес упаковки:</strong> 25 кг</div>
 										<div class="item-product__feature"><strong>Раход:</strong>5 кг / м<sup>2</sup></div>
+										<div class="color-product">
+											<a href="#">Цвет и фактуры на выбор</a>
+											<div class="icon-color"></div>
+										</div>
 									</div>
-									<div class="color-product">
-										<a href="#">Цвет и фактуры на выбор</a>
-										<div class="icon-color"></div>
+									<div class="item-product-prices">
+										<div class="item-product__oldprice">1 400 р. шт</div>
+										<div class="item-product__price">1 000 р. шт</div>
 									</div>
 									<div class="item-product__bottom">
-										<div class="item-product__left">
-											<div class="item-product__price">1 000 р. шт</div>
-											<div class="item-product__oldprice">1 400 р. шт</div>
-										</div>
 										<div class="quantity">
 											<div class="quantity-button quantity-down">–</div>
 											<input type="number" min="1" step="1" value="10">
 											<div class="quantity-button quantity-up">+</div>
 										</div>
-									</div>
-									<div class="item-product__buttons">
-										<a href="#" class="link-simple">подробнее</a>
 										<a href="#" class="btn-main">В корзину</a>
 									</div>
 								</div>
 							</div>
 							<div class="col-xl-4 col-6">
 								<div class="item-product">
-									<div class="item-product_tag">скидка</div>
+									<a href="#" class="item-product__link"></a>
 									<div class="item-product__image">
 										<img src="img/product1.jpg" alt="alt">
 									</div>
@@ -632,19 +630,16 @@
 										<div class="item-product__feature"><strong>Вес упаковки:</strong> 25 кг</div>
 										<div class="item-product__feature"><strong>Раход:</strong>5 кг / м<sup>2</sup></div>
 									</div>
+									<div class="item-product-prices">
+										<div class="item-product__oldprice">1 400 р. шт</div>
+										<div class="item-product__price">1 000 р. шт</div>
+									</div>
 									<div class="item-product__bottom">
-										<div class="item-product__left">
-											<div class="item-product__price">1 000 р. шт</div>
-											<div class="item-product__oldprice">1 400 р. шт</div>
-										</div>
 										<div class="quantity">
 											<div class="quantity-button quantity-down">–</div>
 											<input type="number" min="1" step="1" value="10">
 											<div class="quantity-button quantity-up">+</div>
 										</div>
-									</div>
-									<div class="item-product__buttons">
-										<a href="#" class="link-simple">подробнее</a>
 										<a href="#" class="btn-main">В корзину</a>
 									</div>
 								</div>
@@ -853,7 +848,7 @@
 <script src="libs/mask/jquery.maskedinput.js"></script>
 <script src="libs/scroll2id/PageScroll2id.min.js"></script>
 <script src="libs/jQueryFormStyler-master/jquery.formstyler.min.js"></script>
-<script src="js/common.js?ver=1.3"></script>
+<script src="js/common.js?ver=1.8"></script>
 <!-- Yandex.Metrika counter --><!-- /Yandex.Metrika counter -->
 <!-- Google Analytics counter --><!-- /Google Analytics counter -->
 </body>
