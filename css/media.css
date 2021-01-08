@@ -273,8 +273,9 @@ body {
 	display: flex;
 }
 .wrap-menu {
-    top: 0px;
+    top: 100px;
     padding: 43px 0;
+    position: fixed;
 }
 .basket .container {
     max-width: 920px;
@@ -567,6 +568,9 @@ body {
     font-size: 18px;
         min-width: 124px;
     }
+    .wrap-menu .menu li a {
+    font-size: 12px;
+}
 }
 
 
