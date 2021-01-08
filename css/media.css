@@ -977,7 +977,7 @@ body {
      display: none;
  }
 .header-categories li a {
-    font-size: 10px;
+    font-size: 9px;
 }
 
 .slider-billbord__item {
@@ -1360,6 +1360,9 @@ body {
 }
 .item-product__descr {
     font-size: 13px;
+}
+.header-categories__name {
+    padding: 0 1px;
 }
 }
 @media only screen and (max-width : 390px) {
