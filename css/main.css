@@ -2427,3 +2427,13 @@ select {
 	z-index: 2;
 	margin: 0;
 }
+#add-basket .modal-wrap .block-form {
+	padding-left: 20px;
+	padding-right: 20px;
+}
+.text-basket {
+	text-align: center;
+}
+.text-basket .link-page {
+	text-transform: none;
+}
