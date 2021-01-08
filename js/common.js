@@ -57,30 +57,14 @@ $(document).ready(function() {
 	//кнопка sandwich
 
 
-	$(".btn_nav_catalog").click(function() {
-		$(".wrap-menu").slideUp(200);
-		$(".btn_nav_menu").find(".sandwich").removeClass("active");
-		$(this).find(".sandwich").toggleClass("active");
-		if ($(".header__bottom").is(":hidden")) {
-			$(".header__bottom").slideDown(200);
-		} else {
-			$(".header__bottom").slideUp(200);
-		}
-	});
 
-	$(".header__bottom a").click(function() {
-		$(".header__bottom").slideUp(200);
-		$(".sandwich").removeClass("active");
+
+
+	$(".btn-search-fake").click(function() {
+		$(".header-search").toggleClass("active");
 	});
 
 	$(".btn_nav_menu").click(function() {
-
-		{
-			if ($(window).width() < 1200) { 
-				$(".header__bottom").slideUp(200);
-				
-			}
-		}
 		
 		$(".btn_nav_catalog").find(".sandwich").removeClass("active");
 		$(this).find(".sandwich").toggleClass("active");
@@ -103,19 +87,11 @@ $(".btn-delate").click(function() {
 		$(this).parent("td").parent("tr").remove();
 	});
 
-	/*высота блока по экрану*/
-	function heightDetect() {
-		$('.header__bottom').css("height", $(window).height() -$(".header").height() + 60);
-	};
-	heightDetect();
-	$(window).resize(function() {
-		heightDetect();
-	});
 
 
 	/*высота блока по экрану*/
 	function heightDetect2() {
-		$('.wrap-menu').css("height", $(window).height() -$(".header").height() + 60);
+		$('.wrap-menu').css("height", $(window).height() -$(".header__fixed").height() + 60);
 	};
 	heightDetect2();
 	$(window).resize(function() {
@@ -198,6 +174,42 @@ $(".btn-delate").click(function() {
 		infinite: true,
 		slidesToShow: 1,
 		slidesToScroll: 1
+	});
+
+	$('.header-categories').slick({
+		arrows: true,
+		dots: false,
+		prevArrow: '<div class="slick-prev slick-arrow"><i class="far fa-angle-left"></i></div>',
+		nextArrow: '<div class="slick-next slick-arrow"><i class="far fa-angle-right"></i></div>',
+		infinite: true,
+		slidesToShow: 9,
+		slidesToScroll: 1,
+		responsive: [
+			{
+				breakpoint: 1200,
+				settings: {
+				slidesToShow: 6,
+				}
+			},
+			{
+				breakpoint: 992,
+				settings: {
+				slidesToShow: 5,
+				}
+			},
+			{
+				breakpoint: 768,
+				settings: {
+				slidesToShow: 4,
+				}
+			},
+			{
+				breakpoint: 390,
+				settings: {
+				slidesToShow: 3,
+				}
+			}
+			]
 	});
 
 
