@@ -65,7 +65,7 @@ $(document).ready(function() {
 	});
 
 	$(".btn_nav_menu").click(function() {
-		
+		$(this).toggleClass("active");
 		$(".btn_nav_catalog").find(".sandwich").removeClass("active");
 		$(this).find(".sandwich").toggleClass("active");
 		if ($(".wrap-menu").is(":hidden")) {
@@ -77,6 +77,7 @@ $(document).ready(function() {
 
 	$(".wrap-menu a").click(function() {
 		$(".wrap-menu").slideUp(200);
+		$(".btn_nav_menu").removeClass("active");
 		$(".sandwich").removeClass("active");
 	});
 

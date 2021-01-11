@@ -15,6 +15,13 @@
 .header-search.active .header-search__line {
     width: 790px;
     }
+    .header__fixed .header-search.active .header-search__line {
+    width: 939px;
+}
+.search-page {
+    width: 670px;
+    left: -30px;
+    }
 }
 @media only screen and (max-width : 1390px) {
     .btn-basket {
@@ -98,6 +105,13 @@
 }
 .header-categories li a {
 font-size: 10px;
+}
+.header__fixed .header-search.active .header-search__line {
+    width: 767px;
+}
+.search-page {
+    width: 543px;
+    left: 0;
 }
 }
 /* Large Devices, Wide Screens */
@@ -390,6 +404,21 @@ body {
     border: none;
       display: block;
 }
+.header__wrap {
+    flex-wrap: wrap;
+}
+.header__fixed .header-search {
+    width: 100%;
+    order: 2;
+    margin-left: 0;
+}
+.header__fixed .btn-search-fake, .header__fixed .btn-search {
+    height: 28px;
+    width: 35px;
+}
+.search-page {
+    width: 360px;
+    }
 }
 
 
@@ -570,6 +599,20 @@ body {
     }
     .wrap-menu .menu li a {
     font-size: 12px;
+}
+.result-search__header {
+    display: block;
+}
+.search-page {
+    margin: 15px 0;
+    margin-bottom: 25px;
+    width: 100%;
+}
+.result-search .title-section {
+    text-align: center;
+}
+.result-search .row_products {
+    margin-bottom: 0;
 }
 }
 
@@ -930,6 +973,19 @@ body {
     .delivery-basket {
     font-size: 16px;
 }
+.text-addbasket {
+    font-size: 15px;
+    line-height: 25px;
+    }
+    .buttons-modal .btn-main {
+        margin-top: 25px;
+    }
+    #add-basket .modal-wrap .title-section {
+        padding-bottom: 15px;
+    }
+    .result-search .row_products {
+        margin-bottom: 15px;
+    }
 }
 
 
@@ -1409,8 +1465,23 @@ body {
 .header-categories__name {
     padding: 0 1px;
 }
-
-
+.buttons-modal .btn-main {
+    font-size: 13px;
+    line-height: 21px;
+    margin-top: 20px;
+}
+.text-addbasket {
+    font-size: 13px;
+    line-height: 21px;
+}
+#add-basket .modal-wrap .block-form {
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 20px;
+}
+.result-search {
+    padding-bottom: 35px;
+}
 }
 @media only screen and (max-width : 390px) {
 .header__fixed .logo-name {
